@@ -31,7 +31,7 @@ export default {
       axios.get('https://cors-anywhere.herokuapp.com/http://shibe.online/api/shibes?count=18&urls')
            .then(function (response) {
              vm.doges.push(response.data)
-             this.busy = false;
+             vm.busy = false;
            })
     }
   },
