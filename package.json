@@ -10,7 +10,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "vue": "^2.5.17",
-    "vueinview": "^1.0.5"
+    "vue-infinite-scroll": "^2.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.4",
