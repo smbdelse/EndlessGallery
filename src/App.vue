@@ -28,7 +28,7 @@ export default {
       let vm = this
       vm.busy = true;
       // console.log('wow');
-      axios.get('https://shibe.online/api/shibes?count=18&urls', {headers: {'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/x-www-form-urlencoded'}})
+      axios.get('https://cors-anywhere.herokuapp.com/http://shibe.online/api/shibes?count=18&urls')
            .then(function (response) {
              vm.doges.push(response.data)
              this.busy = false;
