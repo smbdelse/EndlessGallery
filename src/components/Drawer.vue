@@ -30,7 +30,7 @@ export default {
   },
   computed:{
       button(){
-          return this.open ? '×' : '❤'
+          return this.open ? '×' : '♥'
       }
   },
   components: {
