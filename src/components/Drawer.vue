@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="fixed pin-t pin-l w-1/4 max-w-full text-center p-4 z-50"><button class="button__drawer" @click="open=!open">{{button}}</button></div>         
+        <div class="fixed pin-t pin-l w-1/4 max-w-full text-center p-4 z-50"><button class="button__drawer" @click="open=!open" v-html="button"></button></div>         
         <div :class="{'opened':open}" class="drawer md:w-1/4 w-full">
             <transition-group name="list" tag="div">
                 <photo 
@@ -30,7 +30,7 @@ export default {
   },
   computed:{
       button(){
-          return this.open ? '×' : '♥'
+          return this.open ? '×' : '&#9829;'
       }
   },
   components: {
