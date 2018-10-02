@@ -111,8 +111,8 @@ export default {
   width: 2rem;
   height: 2rem;
   border-radius: 9999px;
-  border: 5px solid #ffffff;
-  border-left-color: transparent;  
+  border: 5px solid transparent;
+  border-left-color:  #ffffff;  
   bottom: 1rem;
   left: calc(50% - 1rem);
   animation: spinning 2s linear infinite;
