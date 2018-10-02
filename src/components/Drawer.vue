@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="fixed pin-t pin-l w-1/4 max-w-full text-center p-4 z-50"><button class="button__drawer" @click="open=!open">{{button}}</button></div>         
-        <div :class="{'opened':open}" class="drawer">
+        <div :class="{'opened':open}" class="drawer md:w-1/4 w-full">
             <transition-group name="list" tag="div">
                 <photo 
                     v-for="doge in faved"
@@ -41,7 +41,7 @@ export default {
 
 <style>
     .drawer {
-        @apply fixed h-full w-1/4 max-w-full pin-t pin-l pb-1 pt-20 px-2 shadow-lg bg-white z-40 overflow-y-scroll overflow-x-hidden;
+        @apply fixed h-full max-w-full pin-t pin-l pb-1 pt-20 px-2 shadow-lg bg-white z-40 overflow-y-scroll overflow-x-hidden;
     }
 
     .button__drawer {
